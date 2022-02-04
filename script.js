@@ -32,7 +32,7 @@ function createList() {
             const listItem = document.createElement('li');
 
             // listItem.classList.add('wrong');
-            
+
         listItem.setAttribute('data-index', index);
 
         listItem.innerHTML = `
@@ -47,4 +47,23 @@ function createList() {
 
         draggable_list.appendChild(listItem);
     });
+addEventListeners();
+}
+
+function addEventListeners() {
+    const draggables = document.querySelectorAll('.draggable');
+    const dragListItems = document.querySelectorAll('.draggable-list li');
+
+    draggables.forEach(draggable => {
+        draggable.addEventListener('dragstart', dragStart);
+
+    })
+
+    draggables.forEach(draggable => {
+        draggable.addEventListener('dragover', dragOver);
+        draggable.addEventListener('drop', dragDrop);
+        draggable.addEventListener('dragenter', dragEnter);
+        draggable.addEventListener('dragleave', dragLeave);
+        
+    })
 }
