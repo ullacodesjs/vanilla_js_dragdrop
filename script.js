@@ -29,10 +29,10 @@ function createList() {
     .sort((a, b) => a.sort - b.sort)
     .map(a => a.value)
     .forEach((book, index) => {
-    
+            const listItem = document.createElement('li');
 
-        const listItem = document.createElement('li');
-
+            // listItem.classList.add('wrong');
+            
         listItem.setAttribute('data-index', index);
 
         listItem.innerHTML = `
