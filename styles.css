@@ -4,7 +4,7 @@
 
 :root {
     --border-color: #e3e5e4;
-    --background-color: #c3c7ca;
+    --background-color: #ff8fa4;
     --text-color: #34444f;
 }
 
@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: #fff;
+    background-color: #ffdde3;
     display: flex;
     flex-direction: column;
     align-items: center;
