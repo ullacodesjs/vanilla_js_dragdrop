@@ -29,7 +29,7 @@ function createList() {
     .sort((a, b) => a.sort - b.sort)
     .map(a => a.value)
     .forEach((book, index) => {
-    console.log(book);
+    
 
         const listItem = document.createElement('li');
 
